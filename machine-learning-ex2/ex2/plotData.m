@@ -12,6 +12,14 @@ figure; hold on;
 %               examples and 'ko' for the negative examples.
 %
 
+%Find Indicex of Positive and Negative Examples
+pos = find(y==1); neg = find(y==0);
+
+%Plot Examples
+plot(X(pos, 1), X(pox, 2), 'k+', 'LineWidth', 2, 'MakerSize', 7);
+
+plot(X(neg, 1), X(neg, 2), 'ko', 'MakerFaceColor', 'y', 'MakerSize', 7);
+
 
 
 
